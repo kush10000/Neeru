@@ -1,32 +1,30 @@
--- Known flood-prone spots (SPEC.md §9).
--- Coordinates are APPROXIMATE starting points: verify each one on the map and
--- move the pin to the exact underpass/junction before soft launch.
--- ST_MakePoint(lon, lat): longitude first.
+-- GENERATED from supabase/spots.json by the /dev/spots editor. Don't edit by hand.
+-- Known flood-prone spots (SPEC.md §9). verified = pin checked against the real location.
 
 insert into public.spots (name, geom, source, notes)
-select name, extensions.st_setsrid(extensions.st_makepoint(lon, lat), 4326)::extensions.geography,
-       'community', 'approx — verify'
+select name, extensions.st_setsrid(extensions.st_makepoint(lon, lat), 4326)::extensions.geography, source, notes
 from (values
-  ('Silk Board junction',                    77.6238, 12.9177),
-  ('Hebbal flyover / underpass',             77.5970, 13.0358),
-  ('Bellandur (ORR)',                        77.6762, 12.9260),
-  ('Ecospace / Kariyammana Agrahara',        77.6810, 12.9255),
-  ('Yemalur',                                77.6880, 12.9530),
-  ('Panathur railway underbridge',           77.6993, 12.9378),
-  ('Varthur',                                77.7464, 12.9437),
-  ('Marathahalli bridge',                    77.7011, 12.9569),
-  ('Kundalahalli underpass',                 77.7154, 12.9636),
-  ('Mahadevapura (ORR)',                     77.6960, 12.9960),
-  ('KR Puram',                               77.6960, 13.0071),
-  ('Hoodi junction',                         77.7155, 12.9930),
-  ('Sai Layout, Horamavu',                   77.6645, 13.0280),
-  ('Hennur',                                 77.6305, 13.0258),
-  ('Manyata Tech Park area',                 77.6200, 13.0450),
-  ('Sarjapur Road (Doddakannelli)',          77.6870, 12.9135),
-  ('HSR Layout',                             77.6389, 12.9116),
-  ('Koramangala (ST Bed)',                   77.6235, 12.9345),
-  ('Bommanahalli',                           77.6240, 12.9010),
-  ('Shanthinagar',                           77.5960, 12.9561),
-  ('Okalipuram underpass',                   77.5650, 12.9790),
-  ('Majestic underpass',                     77.5713, 12.9767)
-) as t(name, lon, lat);
+  ('Silk Board junction', 77.623800, 12.917700, 'community', null, false),
+  ('Hebbal flyover / underpass', 77.597000, 13.035800, 'community', null, false),
+  ('Bellandur (ORR)', 77.676200, 12.926000, 'community', null, false),
+  ('Ecospace / Kariyammana Agrahara', 77.681000, 12.925500, 'community', null, false),
+  ('Yemalur', 77.688000, 12.953000, 'community', null, false),
+  ('Panathur railway underbridge', 77.699300, 12.937800, 'community', null, false),
+  ('Varthur', 77.746400, 12.943700, 'community', null, false),
+  ('Marathahalli bridge', 77.701100, 12.956900, 'community', null, false),
+  ('Kundalahalli underpass', 77.715400, 12.963600, 'community', null, false),
+  ('Mahadevapura (ORR)', 77.696000, 12.996000, 'community', null, false),
+  ('KR Puram', 77.696000, 13.007100, 'community', null, false),
+  ('Hoodi junction', 77.715500, 12.993000, 'community', null, false),
+  ('Sai Layout, Horamavu', 77.664500, 13.028000, 'community', null, false),
+  ('Hennur', 77.630500, 13.025800, 'community', null, false),
+  ('Manyata Tech Park area', 77.620000, 13.045000, 'community', null, false),
+  ('Sarjapur Road (Doddakannelli)', 77.687000, 12.913500, 'community', null, false),
+  ('HSR Layout', 77.638900, 12.911600, 'community', null, false),
+  ('Koramangala (ST Bed)', 77.623500, 12.934500, 'community', null, false),
+  ('Bommanahalli', 77.624000, 12.901000, 'community', null, false),
+  ('Shanthinagar', 77.596000, 12.956100, 'community', null, false),
+  ('Okalipuram underpass', 77.565000, 12.979000, 'community', null, false),
+  ('Majestic underpass', 77.571300, 12.976700, 'community', null, false)
+) as t(name, lon, lat, source, notes, verified)
+where name is not null;

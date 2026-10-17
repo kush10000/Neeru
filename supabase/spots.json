@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Silk Board junction",
+    "lon": 77.6238,
+    "lat": 12.9177,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Hebbal flyover / underpass",
+    "lon": 77.597,
+    "lat": 13.0358,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Bellandur (ORR)",
+    "lon": 77.6762,
+    "lat": 12.926,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Ecospace / Kariyammana Agrahara",
+    "lon": 77.681,
+    "lat": 12.9255,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Yemalur",
+    "lon": 77.688,
+    "lat": 12.953,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Panathur railway underbridge",
+    "lon": 77.6993,
+    "lat": 12.9378,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Varthur",
+    "lon": 77.7464,
+    "lat": 12.9437,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Marathahalli bridge",
+    "lon": 77.7011,
+    "lat": 12.9569,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Kundalahalli underpass",
+    "lon": 77.7154,
+    "lat": 12.9636,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Mahadevapura (ORR)",
+    "lon": 77.696,
+    "lat": 12.996,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "KR Puram",
+    "lon": 77.696,
+    "lat": 13.0071,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Hoodi junction",
+    "lon": 77.7155,
+    "lat": 12.993,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Sai Layout, Horamavu",
+    "lon": 77.6645,
+    "lat": 13.028,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Hennur",
+    "lon": 77.6305,
+    "lat": 13.0258,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Manyata Tech Park area",
+    "lon": 77.62,
+    "lat": 13.045,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Sarjapur Road (Doddakannelli)",
+    "lon": 77.687,
+    "lat": 12.9135,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "HSR Layout",
+    "lon": 77.6389,
+    "lat": 12.9116,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Koramangala (ST Bed)",
+    "lon": 77.6235,
+    "lat": 12.9345,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Bommanahalli",
+    "lon": 77.624,
+    "lat": 12.901,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Shanthinagar",
+    "lon": 77.596,
+    "lat": 12.9561,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Okalipuram underpass",
+    "lon": 77.565,
+    "lat": 12.979,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  },
+  {
+    "name": "Majestic underpass",
+    "lon": 77.5713,
+    "lat": 12.9767,
+    "source": "community",
+    "notes": "",
+    "verified": false
+  }
+]
