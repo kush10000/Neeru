@@ -5,12 +5,12 @@
     "lat": 12.9177,
     "source": "community",
     "notes": "",
-    "verified": false
+    "verified": true
   },
   {
     "name": "Hebbal flyover / underpass",
-    "lon": 77.597,
-    "lat": 13.0358,
+    "lon": 77.5897018,
+    "lat": 13.0428,
     "source": "community",
     "notes": "",
     "verified": false

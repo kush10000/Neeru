@@ -4,8 +4,8 @@
 insert into public.spots (name, geom, source, notes)
 select name, extensions.st_setsrid(extensions.st_makepoint(lon, lat), 4326)::extensions.geography, source, notes
 from (values
-  ('Silk Board junction', 77.623800, 12.917700, 'community', null, false),
-  ('Hebbal flyover / underpass', 77.597000, 13.035800, 'community', null, false),
+  ('Silk Board junction', 77.623800, 12.917700, 'community', null, true),
+  ('Hebbal flyover / underpass', 77.589702, 13.042800, 'community', null, false),
   ('Bellandur (ORR)', 77.676200, 12.926000, 'community', null, false),
   ('Ecospace / Kariyammana Agrahara', 77.681000, 12.925500, 'community', null, false),
   ('Yemalur', 77.688000, 12.953000, 'community', null, false),
