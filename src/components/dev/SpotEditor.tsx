@@ -79,11 +79,19 @@ export default function SpotEditor({ initialSpots }: { initialSpots: SeedSpot[] 
   async function save() {
     setStatus("Saving…");
     const body = spots.map(({ key: _key, ...s }) => s); // eslint-disable-line @typescript-eslint/no-unused-vars
-    const res = await fetch("/api/dev/spots", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
+    let res: Response;
+    try {
+      res = await fetch("/api/dev/spots", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+    } catch {
+      // The page stays usable after the dev server stops, but saving needs it.
+      return setStatus(
+        'Save failed: the dev server isn\'t running. Start it with "pnpm dev", then click Save again. Your edits are kept until you close this tab.',
+      );
+    }
     const json = await res.json().catch(() => ({}));
     if (!res.ok) return setStatus(`Save failed: ${json.error ?? res.status}`);
     setDirty(false);
